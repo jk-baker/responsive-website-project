@@ -166,6 +166,7 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 
 /** ----------------- Mobile Styles - Homepage ------------*/
@@ -511,38 +512,57 @@ aside {
   }
 }
 
+/* Desktop Styles */
+
 @media only screen and (min-width: 1200px) {
-  header nav {
-    width: 960px;
+  .content-wrapper {
+    max-width: 960px;
   }
 
-  .hero-area {
-    width: 720px;
+  /* Hero */
+  .hero-area h1 {
+    width: 50%;
   }
 
-  .form-description {
-    width: 320px;
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
   }
 
-  .form {
-    width: 320px;
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 33.3%;
   }
 
-  .features {
-    width: 900px;
+  /* Features */
+  .features h2 {
+    width: 90%;
   }
 
   .features article {
-    width: 175px;
-  }
-  .reviews img {
-    width: 480px;
+    flex-basis: 30%;
   }
 
-  .reviews .review-content {
-    width: 420px;
+  .reviews article div {
+    width: 45%;
   }
 
+  /*  =======================================================
+      About Page
+      =======================================================
+  */
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 92%;
+    }
+
+  /*  ========================================================
+      FAQ Page
+      ========================================================
+  */
+    .faq h2 {
+      width: 100%;
+    }
 }
 
 @media print,
