@@ -92,18 +92,20 @@ textarea {
  
 html {
 	font-size: 16px;
-  color: #e2e3ed;
 }
  
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
  
 ul, 
 ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
  
 a {
@@ -115,6 +117,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -239,6 +242,10 @@ footer .social-icons p {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125;
 }
 
 footer .copyright {
@@ -366,7 +373,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-/* .map figure {
+.map figure {
     width: 100%;
     height: 0; 
     padding-bottom: 125%; 
@@ -380,7 +387,7 @@ input[type=button] {
     position: absolute; 
     top: 0; 
     left: 0; 
-} */
+}
 
 .contact-section {
   background-color: #2a423a;
@@ -520,7 +527,7 @@ input[type=button] {
 }
 
 @media only screen and (min-width: 768px) {
-  /* General styles */
+  /* Tablet Styles */
   
   .content-wrapper {
     max-width: 640px;
@@ -567,6 +574,10 @@ h3 {
 
   /* Hero Area */
   
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -607,6 +618,10 @@ h3 {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
 
   .reviews article {
@@ -617,9 +632,8 @@ h3 {
   .reviews h2 {
     width: 85%;
   }
-  .reviews img {
-    width: 49%;
-  }
+  
+  .reviews article img,
   .reviews article div {
     width: 49%;
   }
@@ -656,6 +670,11 @@ h3 {
       line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -674,6 +693,10 @@ h3 {
 
   .mission-content p {
   width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -740,7 +763,7 @@ h3 {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
   }
 
@@ -777,14 +800,18 @@ h3 {
   }
 
   footer h4 {
-    font-size: 1.875;
+    font-size: 1.875em;
   }
 
   /*  =======================================================
       About Page
       =======================================================
   */
-    .mission h2,
+  .map figure {
+    padding-bottom: 37.5%;
+  }  
+  
+  .mission h2,
     .contact-section .content-wrapper h2 {
       width: 92%;
       font-size: 3em;
